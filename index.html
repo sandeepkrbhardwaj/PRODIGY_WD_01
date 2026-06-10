@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRODIGY_WD_01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">PRODIGY_WD_01</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"     class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#work"     class="nav-link"  data-section="work">Work</a></li>
+        <li><a href="#contact"  class="nav-link"  data-section="contact">Contact</a></li>
+        <li><a href="#contact"  class="nav-cta">Get Started →</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-progress" id="navProgress"></div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-noise"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal">
+        <span class="tag-dot"></span>
+        Intern Project — PRODIGY_WD_01
+      </div>
+
+      <h1 class="hero-title reveal">
+        <span class="title-line line-1">ASPIRING </span>
+        <span class="title-line line-2 gradient-text">WEB DEVELOPER </span>
+        <span class="title-line line-3">& AIML STUDENT</span>
+      </h1>
+
+      <p class="hero-sub reveal">
+       B.Tech CSE (AIML) student passionate about Web Development, Java Programming, and Artificial Intelligence. Building responsive websites and modern digital experiences.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#work" class="btn btn-primary">
+          <span>Explore Portfolio
+</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Done</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TICKER / MARQUEE
+  ══════════════════════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track"> 
+      <span>UI/UX Design</span><span class="ticker-dot">◆</span>
+      <span>Web Development</span><span class="ticker-dot">◆</span>
+      <span>Visual Effects</span><span class="ticker-dot">◆</span>
+      <span>3D Experiences</span><span class="ticker-dot">◆</span>
+      <span>Mobile Apps</span><span class="ticker-dot">◆</span>
+      <!-- duplicate for seamless loop -->
+      <span>UI/UX Design</span><span class="ticker-dot">◆</span>
+      <span>Web Development</span><span class="ticker-dot">◆</span>
+      <span>Visual Effects</span><span class="ticker-dot">◆</span>
+      <span>3D Experiences</span><span class="ticker-dot">◆</span>
+      <span>Mobile Apps</span><span class="ticker-dot">◆</span>
+
+       <span>UI/UX Design</span><span class="ticker-dot">◆</span>
+      <span>Web Development</span><span class="ticker-dot">◆</span>
+      <span>Visual Effects</span><span class="ticker-dot">◆</span>
+      <span>3D Experiences</span><span class="ticker-dot">◆</span>
+      <span>Mobile Apps</span><span class="ticker-dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES
+  ══════════════════════════════════════════════ -->
+  <section class="services section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow reveal">Expertise</p>
+      <h2 class="section-title reveal">MY SKILLS <span class="gradient-text">& EXPERTISE</span></h2>
+      <p class="section-desc reveal">
+Technologies and skills I am learning and using as a B.Tech CSE (AIML) student.</div>
+
+    <div class="services-grid">
+
+      <!-- Service 01:  Web Development -->
+      <div class="service-card reveal" data-delay="0">
+        <div class="card-number">01</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16,14 6,24 16,34"/>
+            <polyline points="32,14 42,24 32,34"/>
+            <line x1="28" y1="10" x2="20" y2="38"/>
+          </svg>
+        </div>
+        <h3>Web Development</h3>
+        <p>
+Building responsive and interactive websites using HTML, CSS, JavaScript, and modern web technologies.</p>
+        <div class="card-tags"><span>React</span><span>Next.js</span><span>Node.js</span></div>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <!-- Service 02: java programming  -->
+      <div class="service-card reveal" data-delay="100">
+        <div class="card-number">02</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="14" y="6" width="20" height="36" rx="3"/>
+            <line x1="14" y1="12" x2="34" y2="12"/>
+            <line x1="14" y1="36" x2="34" y2="36"/>
+            <circle cx="24" cy="39" r="1.5"/>
+          </svg>
+        </div>
+        <h3>Java Programming</h3>
+        <p>
+Developing applications and strengthening problem-solving skills using Java.</p>
+        <div class="card-tags"><span>Flutter</span><span>React Native</span><span>State Mgmt</span></div>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <!-- Service 03: Frontend Design -->
+      <div class="service-card reveal" data-delay="200">
+        <div class="card-number">03</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 36c-1.5 0-3-1.5-3-3.5V11c0-1.5 1.5-3 3-3h11c1.5 0 3 1.5 3 3v21.5c0 2-1.5 3.5-3 3.5H12z"/>
+            <path d="M23 15c1.5 0 3 1.5 3 3v17c0 1.5 1.5 3 3 3h10c1.5 0 3-1.5 3-3V15c0-1.5-1.5-3-3-3H26"/>
+          </svg>
+        </div>
+        <h3>Frontend Design</h3>
+        <p>
+Creating attractive and user-friendly interfaces with responsive layouts.</p>
+        <div class="card-tags"><span>Figma</span><span>Prototyping</span><span>Design Systems</span></div>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <!-- Service 04: Backend & Database Management -->
+      <div class="service-card reveal" data-delay="300">
+        <div class="card-number">04</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <ellipse cx="24" cy="12" rx="14" ry="5"/>
+            <path d="M10 12v8c0 2.8 6.3 5 14 5s14-2.2 14-5v-8"/>
+            <path d="M10 20v8c0 2.8 6.3 5 14 5s14-2.2 14-5v-8"/>
+            <path d="M10 28v8c0 2.8 6.3 5 14 5s14-2.2 14-5v-8"/>
+          </svg>
+        </div>
+        <h3>Backend</h3>
+        <p>Designing secure server-side logic and managing high-availability databases with real-time sync systems.</p>
+        <div class="card-tags"><span>Firebase</span><span>Supabase</span><span>REST APIs</span></div>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <!-- Service 05: Artificial Intelligence & ML -->
+      <div class="service-card reveal" data-delay="400">
+        <div class="card-number">05</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="8" width="32" height="32" rx="4"/>
+            <circle cx="24" cy="24" r="6"/>
+            <line x1="24" y1="2" x2="24" y2="8"/>
+            <line x1="24" y1="40" x2="24" y2="46"/>
+            <line x1="2" y1="24" x2="8" y2="24"/>
+            <line x1="40" y1="24" x2="46" y2="24"/>
+          </svg>
+        </div>
+        <h3>Artificial Intelligence & ML</h3>
+        <p>
+Exploring machine learning concepts and AI applications as part of my AIML specialization.</p>
+        <div class="card-tags"><span>Python</span><span>AI Automation</span><span>Data Flows</span></div>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+      <!-- Service 06: Core Optimization & Performance -->
+      <div class="service-card reveal" data-delay="500">
+        <div class="card-number">06</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="16"/>
+            <polyline points="24,12 24,24 34,24"/>
+            <polyline points="38,10 42,14 38,18"/>
+          </svg>
+        </div>
+        <h3>Data Structures & Algorithms</h3>
+        <p>
+Improving coding efficiency and problem-solving through DSA practice.</p>
+        <div class="card-tags"><span>DSA Core</span><span>C++</span><span>SEO & Audits</span></div>
+        <a href="#contact" class="card-link">Learn More →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════════════════
+       WORK / PORTFOLIO
+  ══════════════════════════════════════════════ -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow reveal">PORTFOLIO</p>
+        <h2 class="section-title reveal">PROJECT <span class="gradient-text">PORTFOLIO</span></h2>
+      </div>
+
+      <div class="work-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="brand">Development</button>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+
+        <div class="work-card reveal" data-category="web">
+          <div class="work-img" style="--hue:220">
+            <div class="work-img-inner">
+                <div class="brand-logo">HTML • CSS • JS</div>
+              <div class="mock-browser">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-body grad-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">HTML • CSS • JS</span>
+            <h3>Responsive Landing Page</h3>
+            <p>A modern responsive landing page with an interactive navigation menu built using HTML, CSS, and JavaScript.</p>
+          </div>
+          <a href="#contact" class="work-link" aria-label="View FinTrack">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <div class="work-card reveal featured" data-category="mobile">
+          <div class="work-img" style="--hue:270">
+            <div class="work-img-inner">
+              <div class="mock-phone">
+                
+                <div class="brand-logo">WEB APP</div>
+                <div class="phone-notch"></div>
+                <div class="phone-screen grad-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">
+WEB APPLICATION</span>
+            <h3>Student Dashboard System</h3>
+            <p>A student management dashboard for tracking attendance, results, notices, and academic progress.</p>
+          </div>
+          <a href="#contact" class="work-link" aria-label="View Bloom">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <div class="work-card reveal" data-category="brand">
+          <div class="work-img" style="--hue:25">
+            <div class="work-img-inner">
+              <div class="mock-brand">
+                <div class="brand-logo">Application</div>
+                <div class="brand-lines">
+                  <div></div><div></div><div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">
+JAVASCRIPT PROJECT</span>
+            <h3>Stopwatch Web Application</h3>
+            <p>A stopwatch application with start, pause, reset, and lap tracking functionality using JavaScript.</p>
+          </div>
+          <a href="#contact" class="work-link" aria-label="View NovaCo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+        <div class="work-card reveal" data-category="web">
+          <div class="work-img" style="--hue:160">
+            <div class="work-img-inner">
+              <div class="mock-browser">
+                <div class="brand-logo">GAME DEVELOPMENT</div>
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-body grad-3"></div>
+              </div>
+            </div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">
+GAME DEVELOPMENT</span>
+            <h3>Tic-Tac-Toe Game</h3>
+            <p>An interactive Tic-Tac-Toe game with win detection and responsive design built using HTML, CSS, and JavaScript.</p>
+          </div>
+          <a href="#contact" class="work-link" aria-label="View Botanica">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════════════════════ -->
+  <section class="achievements section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-eyebrow reveal">Milestones</p>
+      <h2 class="section-title reveal">Our Proudest <span class="gradient-text">Achievements</span></h2>
+    </div>
+
+    <div class="testimonials-track" id="testimonialsTrack">
+      
+      <!-- Achievement 1 -->
+      <div class="testi-card achievement-card">
+        <div class="achievement-img-wrapper">
+          <!-- Replace URL with your actual image path -->
+          <img src="ach.png" alt="First Place Winner" class="achievement-img">
+        </div>
+       <p>
+Participated in Buildathon 1.0 and developed a project while enhancing technical, teamwork, and problem-solving skills.
+</p>
+
+
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#6c63ff;--c2:#f72585">🏆</div>
+          <div>
+          <strong>Buildathon Participant</strong>
+<span>Buildathon 1.0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="testi-card achievement-card">
+        <div class="achievement-img-wrapper">
+          <img src="gold.png" alt="HackIndia Finalist" class="achievement-img">
+        </div>
+        <p>"
+Developed an AI-Powered Song Creation project using generative AI concepts and earned the Golden Ticket recognition for innovation, creativity, and practical implementation.
+"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#f72585;--c2:#ffd60a">🚀</div>
+          <div>
+           <strong>Golden Ticket Winner</strong>
+<span>AI Bootcamp Project Showcase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="testi-card achievement-card">
+        <div class="achievement-img-wrapper">
+          <img src="unstop.png" alt="Design Marathon" class="achievement-img">
+        </div>
+       <p>
+Participated in Smart Hackathon - Jagriti 2026, collaborating on innovative solutions while strengthening problem-solving, teamwork, and technical skills.
+</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#00f5d4;--c2:#6c63ff">🎨</div>
+          <div>
+            <strong>Hackathon Participant</strong>
+<span>Smart Hackathon - Jagriti 2026</span></div>
+        </div>
+      </div>
+
+      <div class="testi-card achievement-card">
+        <div class="achievement-img-wrapper">
+          <img src="hack.png" alt="Hackathon Winner" class="achievement-img">
+        </div>
+       <p>
+Attended the Hack Defence Summit and explored modern cybersecurity trends, ethical hacking concepts, and emerging digital security challenges.
+</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#00f5d4;--c2:#6c63ff">🎨</div>
+          <div>
+          <strong>Cybersecurity Enthusiast</strong>
+<span>Hack Defence Summit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card achievement-card">
+        <div class="achievement-img-wrapper">
+          <img src="prodigy.png" alt="Design Marathon" class="achievement-img">
+        </div>
+        <p>
+Selected for the Web Development Internship Program at Prodigy InfoTech, working on responsive web applications and interactive front-end projects using HTML, CSS, and JavaScript.
+</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#00f5d4;--c2:#6c63ff">🎨</div>
+          <div>
+           <strong>Web Development Intern</strong>
+<span>Prodigy InfoTech</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplicate set for seamless CSS marquee loop -->
+      <div class="testi-card achievement-card" aria-hidden="true">
+        <div class="achievement-img-wrapper">
+          <img src="ach.png" alt="" class="achievement-img">
+        </div>
+       <p>
+Participated in Buildathon 1.0 and developed a project while enhancing technical, teamwork, and problem-solving skills.
+</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#6c63ff;--c2:#f72585">🏆</div>
+          <div>
+          <strong>Buildathon Participant</strong>
+<span>Buildathon 1.0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card achievement-card" aria-hidden="true">
+        <div class="achievement-img-wrapper">
+          <img src="gold.png" alt="" class="achievement-img">
+        </div>
+        <p>"Developed an AI-Powered Song Creation project using generative AI concepts and earned the Golden Ticket recognition for innovation, creativity, and practical implementation."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#f72585;--c2:#ffd60a">🚀</div>
+          <div>
+           <strong>Golden Ticket Winner</strong>
+<span>AI Bootcamp Project Showcase</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card achievement-card" aria-hidden="true">
+        <div class="achievement-img-wrapper">
+          <img src="unstop.png" alt="" class="achievement-img">
+        </div>
+       <p>
+Participated in Smart Hackathon - Jagriti 2026, collaborating on innovative solutions while strengthening problem-solving, teamwork, and technical skills.
+</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#00f5d4;--c2:#6c63ff">🎨</div>
+          <div>
+            <strong>Hackathon Participant</strong>
+<span>Smart Hackathon - Jagriti 2026</span></div>
+        </div>
+      </div>
+
+      <div class="testi-card achievement-card" aria-hidden="true">
+        <div class="achievement-img-wrapper">
+          <img src="hack.png" alt="" class="achievement-img">
+        </div>
+       <p>
+Attended the Hack Defence Summit and explored modern cybersecurity trends, ethical hacking concepts, and emerging digital security challenges.
+</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#00f5d4;--c2:#6c63ff">🎨</div>
+          <div>
+          <strong>Cybersecurity Enthusiast</strong>
+<span>Hack Defence Summit</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testi-card achievement-card" aria-hidden="true">
+        <div class="achievement-img-wrapper">
+          <img src="prodigy.png" alt="" class="achievement-img">
+        </div>
+        <p>
+Selected for the Web Development Internship Program at Prodigy InfoTech, working on responsive web applications and interactive front-end projects using HTML, CSS, and JavaScript.
+</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="--c1:#00f5d4;--c2:#6c63ff">🎨</div>
+          <div>
+           <strong>Web Development Intern</strong>
+<span>Prodigy InfoTech</span>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left reveal">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">LET'S BUILD <span class="gradient-text">THE FUTURE TOGETHER</span></h2>
+          <p class="contact-sub">Have a project in mind? Drop us a message and we'll get back within 24 hours.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>KCC INSTITUTE OF TECHNOLOGY AND MANAGEMENT</strong>
+                <span>Greater Nodia, India</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <span>sandeepkumarbhardwaj25077@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <span>+91 XXXXXXXX97</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="first name " required />
+              <span class="form-error" id="fnameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="last name " required />
+              <span class="form-error" id="lnameErr"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="@company.com" required />
+            <span class="form-error" id="emailErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service…</option>
+              <option>UI/UX Design</option>
+              <option>Web Development</option>
+              <option>Brand Identity</option>
+              <option>Mobile App</option>
+              <option>Motion Design</option>
+              <option>Cloud & SEO</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project…" rows="5" required></textarea>
+            <span class="form-error" id="msgErr"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span id="btnText">Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! We'll be in touch within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">PRODIGY_WD_01</span>
+          </a>
+          <p>Sandeep Web Solutions
+Passionate about web development, problem solving, and building user-friendly digital experiences.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul>
+              <li><a href="#services">Web Developer</a></li>
+              <li><a href="#services">Java Developer</a></li>
+              <li><a href="#services">Flutter Developer</a></li>
+              <li><a href="#services">Basic Python Developer</a></li>
+              <li><a href="#services">GitHub</a></li>
+              <li><a href="#services">Firebase</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Social</h5>
+            <ul>
+              
+              <li><a href="#">LinkedIn</a></li>
+               <li><a href="#">GitHub</a></li>
+               <li><a href="#">LeetCode</a></li>
+             <li><a href="#">Hackerrank</a></li>
+             
+             
+           
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Sandeep Kumar. All rights reserved.</p>
+      <p>Built with HTML, CSS & JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
